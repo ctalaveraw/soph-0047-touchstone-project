@@ -8,3 +8,26 @@
   --font-heading: Georgia, serif;
   --font-body: Arial, sans-serif;
 }
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-charcoal);
+  background-color: var(--color-paper);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  color: var(--color-teal-dark);
+  line-height: 1.25;
+}
+
+a {
+  color: var(--color-teal-dark);
+}
+
+a:hover {
+  color: var(--color-amber);
+}
