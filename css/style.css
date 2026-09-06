@@ -18,7 +18,9 @@ body {
   background-color: var(--color-paper);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: var(--font-heading);
   color: var(--color-teal-dark);
   line-height: 1.25;
@@ -29,5 +31,34 @@ a {
 }
 
 a:hover {
+  color: var(--color-amber);
+}
+
+header {
+  background-color: var(--color-teal);
+  color: #fff;
+  padding: 1rem 1.5rem;
+}
+
+header h1 {
+  color: #fff;
+  margin: 0 0 0.75rem 0;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
   color: var(--color-amber);
 }
