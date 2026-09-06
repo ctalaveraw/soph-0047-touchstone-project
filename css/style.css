@@ -62,3 +62,19 @@ header nav a {
 header nav a:hover {
   color: var(--color-amber);
 }
+
+main {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+footer {
+  background-color: var(--color-teal-dark);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
