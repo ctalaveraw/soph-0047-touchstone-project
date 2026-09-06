@@ -1,0 +1,10 @@
+:root {
+  --color-teal: #1F5C56;
+  --color-teal-dark: #163f3b;
+  --color-amber: #E8A33D;
+  --color-paper: #F7F4EF;
+  --color-charcoal: #26302E;
+
+  --font-heading: Georgia, serif;
+  --font-body: Arial, sans-serif;
+}
