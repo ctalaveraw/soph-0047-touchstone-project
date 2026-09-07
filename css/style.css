@@ -180,6 +180,14 @@ form {
   margin-top: 0.3rem;
 }
 
+/* Confirmation text shown by JavaScript after a valid submission.
+   Green signals success, distinct from the red used for field errors. */
+.form-success {
+  color: #2e7d32;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
 fieldset {
   border: none;    /* keep the fieldset for accessibility, hide its default border */
   padding: 0;

@@ -97,6 +97,25 @@ function initContactValidation() {
   const emailInput = document.getElementById("email");
   const emailError = document.getElementById("email-error");
 
+  const successMessage = document.getElementById("form-success");
+
+form.addEventListener("submit", function (event) {
+  // There's no real backend to submit to yet, so the actual
+  // browser submission is always prevented. A valid submission
+  // shows a confirmation message instead of sending a request.
+  event.preventDefault();
+
+  successMessage.textContent = "";
+
+  const isNameValid = validateName();
+  const isEmailValid = validateEmail();
+
+  if (isNameValid && isEmailValid) {
+    successMessage.textContent = "Thanks! Your interest has been submitted.";
+    form.reset();
+  }
+});
+
   // Simple email pattern: something, @, something, ., something.
   // Not a full RFC-compliant check, just enough to catch obvious
   // typos like a missing @ or missing domain.
