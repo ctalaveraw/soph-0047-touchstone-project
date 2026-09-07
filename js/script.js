@@ -145,18 +145,6 @@ form.addEventListener("submit", function (event) {
     return true;
   }
 
-  // Runs both checks on submit. If either fails, the submission is
-  // blocked so the user can fix the problem without losing their
-  // other answers or having the page reload.
-  form.addEventListener("submit", function (event) {
-    const isNameValid = validateName();
-    const isEmailValid = validateEmail();
-
-    if (!isNameValid || !isEmailValid) {
-      event.preventDefault();
-    }
-  });
-
   // Clears each error message as soon as the user starts correcting
   // that field, rather than making them resubmit to see it clear.
   nameInput.addEventListener("input", function () {
