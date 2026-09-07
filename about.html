@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Same shared header/nav structure as every other page. -->
     <header>
     <h1>About Us</h1>
     <nav>
@@ -24,6 +25,10 @@
         <p>Twin Cities Animal Rescue started in 2018 as a small foster network run out of a garage. Today we operate a full intake facility and partner with veterinary clinics, shelters, and local businesses across the metro area to give animals in need a second chance.</p>
     </section>
 
+    <!-- Core values: reuses the same aria-labelledby + <ul> pattern as
+         the impact stats and volunteer roles, but is intentionally left
+         unstyled as cards since three short statements read fine as a
+         plain list and don't need the extra visual weight. -->
     <section aria-labelledby="values-heading">
         <h2 id="values-heading">Core Values</h2>
         <ul>
@@ -33,6 +38,11 @@
         </ul>
     </section>
 
+    <!-- Audio and video both include a fallback <p> inside their
+         <source> tags. Browsers that support the media element ignore
+         this text; browsers that don't (or screen readers that can't
+         play media) show/read the fallback description and download
+         link instead, so no one is left without the content. -->
     <section aria-labelledby="message-heading">
         <h2 id="message-heading">A Message From Our Director</h2>
 
