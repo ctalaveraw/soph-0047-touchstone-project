@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Site header: shared structure and nav links across all four pages,
+         so the styling in style.css only has to target <header> once. -->
     <header>
     <h1>Twin Cities Animal Rescue</h1>
     <nav>
@@ -19,11 +21,16 @@
     </nav>
 </header>
 <main>
+    <!-- Mission statement: the first thing a visitor reads, establishes
+         credibility and purpose before asking for any action. -->
     <section aria-labelledby="mission-heading">
         <h2 id="mission-heading">Our Mission</h2>
         <p>Twin Cities Animal Rescue exists to give homeless and surrendered animals a second chance. We rescue, rehabilitate, and rehome pets across the metro area while connecting neighbors with volunteer and foster opportunities that make our work possible.</p>
     </section>
 
+    <!-- Impact stats: aria-labelledby="impact-heading" doubles as a CSS hook
+         in style.css, turning this plain list into a row of stat cards
+         on wider screens. -->
     <section aria-labelledby="impact-heading">
         <h2 id="impact-heading">Our Impact</h2>
         <ul>
@@ -33,11 +40,15 @@
         </ul>
     </section>
 
+    <!-- Call to action: links straight to the two pages a visitor is
+         most likely to want next, regardless of what brought them here. -->
     <section aria-labelledby="help-heading">
         <h2 id="help-heading">How You Can Help</h2>
         <p>Whether you have an hour a week or a spare bedroom for a foster pet, there is a role for you. Visit our <a href="services.html">Services page</a> to learn more about adoption, fostering, and volunteering, or head to our <a href="contact.html">Contact page</a> to reach out directly.</p>
     </section>
 
+    <!-- Pet spotlight: a figure/figcaption pairing gives the image a
+         proper accessible caption rather than relying on alt text alone. -->
     <section aria-labelledby="spotlight-heading">
         <h2 id="spotlight-heading">Pet Spotlight</h2>
         <figure>
@@ -54,6 +65,8 @@
         <img src="images/rescue-pet_c.png" alt="A ginger and white guinea pig sitting and looking toward the camera">
     </section>
 </main>
+<!-- Shared footer, styled once in style.css and repeated identically
+     on every page for consistency. -->
 <footer>
     <p>&copy; 2026 Twin Cities Animal Rescue. All rights reserved.</p>
 </footer>
