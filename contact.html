@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Same shared header/nav structure as every other page. -->
     <header>
     <h1>Contact Us</h1>
     <nav>
@@ -29,6 +30,11 @@
         <p>Monday through Friday, 9:00 AM to 5:00 PM. Weekend hours by appointment for adoption meet and greets.</p>
     </section>
 
+    <!-- Volunteer/foster/adoption interest form. <fieldset> and <legend>
+         group the related inputs for screen readers, and every input
+         has a matching <label for="..."> so clicking a label focuses
+         its input. action="#" is a placeholder since there's no live
+         backend to submit to yet. -->
     <section aria-labelledby="form-heading">
         <h2 id="form-heading">Get Involved</h2>
         <form action="#" method="post">
