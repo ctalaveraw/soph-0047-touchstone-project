@@ -1,0 +1,1 @@
+console.log("Testing JavaScript rendering, if successful, script.js is connected.");
