@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Same shared header/nav structure as every other page. -->
     <header>
     <h1>Our Services</h1>
     <nav>
@@ -19,6 +20,9 @@
     </nav>
 </header>
 <main>
+    <!-- <picture> serves a larger image on wider screens and a smaller
+         one on narrow screens, so mobile visitors aren't downloading
+         a full-size image they'll never see at full width. -->
     <section aria-labelledby="adoption-heading">
         <h2 id="adoption-heading">Adoption Process</h2>
         <picture>
@@ -33,6 +37,9 @@
         <p>Foster families give animals a safe, comfortable place to stay while they wait for adoption. We provide all supplies, food, and veterinary coverage. Fostering can last anywhere from a few days to several months, depending on the animal's needs.</p>
     </section>
 
+    <!-- Volunteer roles: aria-labelledby="volunteer-heading" is reused in
+         style.css to turn this list into cards, same pattern as the
+         impact stats on the home page. -->
     <section aria-labelledby="volunteer-heading">
         <h2 id="volunteer-heading">Volunteer Roles</h2>
         <img src="images/rescue-volunteer_c.png" alt="A volunteer wearing a VOLUNTEER t-shirt kneeling and shaking paws with a large shaggy dog">
