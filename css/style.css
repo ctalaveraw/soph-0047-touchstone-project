@@ -170,6 +170,16 @@ form {
   max-width: 32rem;
 }
 
+/* Error text shown by JavaScript next to an invalid form field.
+   Red is used here specifically as a validation signal, separate
+   from the site's teal/amber palette used everywhere else. */
+.field-error {
+  display: block;
+  color: #b3261e;
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+}
+
 fieldset {
   border: none;    /* keep the fieldset for accessibility, hide its default border */
   padding: 0;
